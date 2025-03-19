@@ -8,6 +8,9 @@ void main() {
   //positional parameter
 
   position("sam", 21);
+
+  //default parameter
+  defaults("sam", 21);
 }
 
 //named parameter
@@ -20,4 +23,11 @@ void person({String name = "", int rollno = 0}) {
 void position(String name, int age) {
   print(name);
   print(age);
+}
+
+//default parameter
+void defaults(String name, int age, [bool isEmployee = false]) {
+  print(name);
+  print(age);
+  print(isEmployee);
 }
